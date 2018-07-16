@@ -5,8 +5,8 @@ const chars = "abcdefghijklmnopqrstuvwxyz"
 function get_letter_interval_2(number_a, number_b) {
   //在这里写入代码
   let desc = number_a > number_b ? true : false;
-  let left = number_a > number_b ? number_b : number_a;
-  let right = number_a > number_b ? number_a :number_b;
+  let left = desc ? number_b : number_a;
+  let right = desc ? number_a :number_b;
 
   let arr = range(right-left+1,left);
   let result = arr.map(convert_number_to_char);
