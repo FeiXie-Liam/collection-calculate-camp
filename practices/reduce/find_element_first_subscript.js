@@ -2,6 +2,8 @@
 
 function calculate_elements_sum(collection, element) {
   //在这里写入代码
+  let indexs = collection.findIndex(elem => elem === element);
+  return indexs;
 }
 
 module.exports = calculate_elements_sum;
